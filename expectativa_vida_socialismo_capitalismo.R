@@ -59,7 +59,19 @@ ggplot(ev1, aes(x = fct_reorder(Entity, media),
   scale_fill_manual(values = c("#88CCEE", "#CC6677",
                                "#DDCC77", "#117733",
                               "#332288", "#AA4499")) +
-  labs(x = "Países", y = "Expectativa de vida (anos)") +
+  labs(x = "Países", y = "Expectativa média de vida (anos)") +
   theme_ipsum() +
   theme(legend.position = "none", 
         axis.text = element_text(color = "black"))
+
+ggplot(ev2, aes(x = as.factor(Year), y = Life.expectancy, 
+               group = Entity, color = Entity)) +
+  geom_point(size = 3.7) +
+  geom_line(size = 1.7) +
+  scale_color_manual(values = c("#88CCEE", "#CC6677",
+                               "#DDCC77", "#117733",
+                              "#332288", "#AA4499")) +
+  labs(x = "Tempo (anos)", y = "Expectativa de vida (anos)") +
+  theme_ipsum() +
+  theme(axis.text = element_text(color = "black"),
+        axis.text.x = element_text(angle = 45))

@@ -28,4 +28,10 @@ ev <- ev %>%
   view()
 
 ev1 <- ev %>%
-  filter(Entity %in% c(""))
+  filter(Entity %in% c("China", "North Korea", "Cuba",
+                       "United States", "Japan", "Germany")) %>%
+  group_by(Entity) %>%
+  summarise(media = mean(Life.expectancy),
+            n = n(), sd = sd(Life.expectancy),
+            se = sd/sqrt(n)) %>%
+  view()

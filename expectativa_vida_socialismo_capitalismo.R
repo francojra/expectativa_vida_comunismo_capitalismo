@@ -61,7 +61,7 @@ ev1 <- ev %>%
 ev2 <- ev %>%
   filter(Entity %in% c("China", "North Korea", "Cuba",
                        "United States", "Japan", "Germany"),
-          (between(Year, 2000, 2019))) %>%
+          (between(Year, 1990, 2019))) %>%
   view()
   
 
@@ -79,18 +79,20 @@ ggplot(ev1, aes(x = fct_reorder(Entity, media),
                                "#DDCC77", "#117733",
                               "#332288", "#AA4499")) +
   labs(x = "Países", y = "Expectativa média de vida (anos)") +
-  theme_ipsum() +
+  theme_ipsum(axis_title_size = 16,
+              axis_text_size = 14) +
   theme(legend.position = "none", 
         axis.text = element_text(color = "black"))
 
 ggplot(ev2, aes(x = as.factor(Year), y = Life.expectancy, 
                group = Entity, color = Entity)) +
-  geom_point(size = 3.7) +
+  #geom_point(size = 3.7) +
   geom_line(size = 1.7) +
   scale_color_manual(values = c("#88CCEE", "#CC6677",
                                "#DDCC77", "#117733",
                               "#332288", "#AA4499")) +
   labs(x = "Tempo (anos)", y = "Expectativa de vida (anos)") +
-  theme_ipsum() +
+  theme_ipsum(axis_title_size = 16,
+              axis_text_size = 14) +
   theme(axis.text = element_text(color = "black"),
-        axis.text.x = element_text(angle = 45))
+        axis.text.x = element_text(angle = 60))

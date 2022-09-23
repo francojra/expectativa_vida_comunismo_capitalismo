@@ -26,6 +26,7 @@ view(ev)
 ev <- ev %>%
   select(-Code) %>%
   view()
+view(ev)
 
 ev1 <- ev %>%
   filter(Entity %in% c("China", "North Korea", "Cuba",
@@ -35,3 +36,14 @@ ev1 <- ev %>%
             n = n(), sd = sd(Life.expectancy),
             se = sd/sqrt(n)) %>%
   view()
+
+ev2 <- ev %>%
+  filter(Entity %in% c("China", "North Korea", "Cuba",
+                       "United States", "Japan", "Germany"),
+          (between(Year, 2000, 2019))) %>%
+  view()
+  
+
+# Gráficos ---------------------------------------------------------------------------------------------------------------------------------
+
+

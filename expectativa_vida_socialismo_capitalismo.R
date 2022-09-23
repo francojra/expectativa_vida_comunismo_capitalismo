@@ -12,6 +12,25 @@
 ### captura a mortalidade ao longo de todo o curso da vida das pessoas.
 ### Isso nos diz a idade média de morte na população.
 
+### As estimativas sugerem que em um mundo pré-moderno e pobre, a expectativa
+### de vida era de cerca de 30 anos em todas as regiões do mundo.
+
+### A expectativa de vida tem aumentado rapidamente desde o iluminismo. No 
+### início do século 19, expectativa de vida começou a aumentar nos países
+### industrializados enquanto permaneceu baixo no resto do mundo. Boa saúde
+### da população nos países mais ricos e persistente má saúde nos países que
+### permaneceram pobres. Isso levou a uma alta desigualdade de como saúde
+### foi distribuída em todo o mundo. Nas últimas décadas essa desigualdade
+### global reduziu. Nenum país do mundo tem mais baixa expectativa de vida
+### que oa países com mais alta expectativa de vida em 1800. Muitos países
+### que sofriam com a má qualidade da saúde tem se recuperado rapidamente.
+
+### Desde 1900 a expectativa média de vida tem dobrado e é agora acima de 
+### 70 anos. A desigualdade na expectativa de vida é ainda muito grande
+### entre os países. Em 2019, a expectativa de vida mais baixa foi na República
+### Central Africana com 53 anos, no Japão a expectativa de vida foi 30 anos
+### maior em 2019.
+
 # Carregar pacotes ------------------------------------------------------------------------------------------------------------------------------
 
 library(tidyverse)

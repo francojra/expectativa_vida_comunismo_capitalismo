@@ -1,4 +1,4 @@
-# Expectativa de vida em países capitalistas e socialistas
+# Expectativa de vida em países capitalistas e capitalistas
 
 ### Autoria do script: Jeanne Franco
 ### Data: 22/09/22

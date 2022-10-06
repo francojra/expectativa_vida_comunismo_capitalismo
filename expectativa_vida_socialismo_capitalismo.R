@@ -78,6 +78,9 @@ ggplot(ev1, aes(x = fct_reorder(Entity, media),
   scale_fill_manual(values = c("#88CCEE", "#CC6677",
                                "#DDCC77", "#117733",
                               "#332288", "#AA4499")) +
+  scale_y_continuous(expand = expansion(mult = c(0,0))) +
+  scale_x_discrete(labels = c("Coreia do Norte", "China", "Estados Unidos",
+                              "Cuba", "Japão", "Alemanha")) +
   labs(x = "Países", y = "Expectativa média de vida (anos)") +
   theme_ipsum(axis_title_size = 16,
               axis_text_size = 14) +
@@ -90,7 +93,9 @@ ggplot(ev2, aes(x = Year, y = Life.expectancy,
   geom_line(size = 1.2) +
   scale_color_manual(values = c("#88CCEE", "#CC6677",
                                "#DDCC77", "#117733",
-                              "#332288", "#AA4499")) +
+                              "#332288", "#AA4499"),
+                     labels = c("China", "Cuba", "Alemanha",
+                                "Japão", "Coreia do Norte", "Estados Unidos")) +
   labs(x = "Tempo (anos)", 
        y = "Expectativa de vida (anos)",
        col = "Países") +

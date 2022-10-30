@@ -1,4 +1,4 @@
-# Expectativa de vida em países capitalistas e capitalistas
+# Expectativa de vida em países democratas e autocratas
 
 ### Autoria do script: Jeanne Franco
 ### Data: 22/09/22

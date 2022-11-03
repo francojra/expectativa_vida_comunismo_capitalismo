@@ -1,5 +1,5 @@
 
-# Expectativa de vida em países capitalistas e socialistas --------------------------------------------------------------------------------------
+# Expectativa de vida em países democratas e autocratas -----------------------------------------------------------------------------------------
 # Autoria do script: Jeanne Franco --------------------------------------------------------------------------------------------------------------
 # Data: 22/09/22 --------------------------------------------------------------------------------------------------------------------------------
 # Referência: https://ourworldindata.org/life-expectancy ----------------------------------------------------------------------------------------
@@ -106,8 +106,6 @@ ggplot(ev2, aes(x = Year, y = Life.expectancy,
   theme_ipsum(axis_title_size = 16,
               axis_text_size = 14) +
   theme(axis.text = element_text(color = "black"))
-
-c4a("dark2", 2)
 
 ggplot(ev3, aes(x = Year, y = Life.expectancy, 
                   group = Entity, col = Entity)) +
